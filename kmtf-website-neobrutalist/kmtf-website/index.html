@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="KMTF ISBI Bandung – Keluarga Mahasiswa Televisi & Film, komunitas kreatif mahasiswa di Institut Seni Budaya Indonesia Bandung."/>
+  <title>KMTF ISBI Bandung – Keluarga Mahasiswa Televisi & Film</title>
+
+  <!-- Google Fonts: Area tidak tersedia di Google Fonts, gunakan Bebas Neue + Barlow sebagai fallback. 
+       Untuk Area font, tambahkan file font .woff2 ke assets/fonts/ dan uncomment @font-face di style.css -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<!-- ======= NOISE OVERLAY ======= -->
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ======= CURSOR DOT ======= -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ===================== NAV ===================== -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo-wrap">
+      <img class="nav-logo" src="assets/images/logo-kmtf.png" alt="KMTF ISBI Bandung"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#divisi">Divisi</a></li>
+      <li><a href="#karya">Karya</a></li>
+      <li><a href="#kegiatan">Kegiatan</a></li>
+      <li><a href="#cta" class="nav-cta">Bergabung</a></li>
+    </ul>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about">Tentang</a>
+    <a href="#divisi">Divisi</a>
+    <a href="#karya">Karya</a>
+    <a href="#kegiatan">Kegiatan</a>
+    <a href="#cta">Bergabung</a>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section id="hero">
+  <!-- Halftone decoration layer -->
+  <div class="halftone-layer" aria-hidden="true"></div>
+  <!-- Spectral gradient blob -->
+  <div class="spectral-blob spectral-1" aria-hidden="true"></div>
+  <div class="spectral-blob spectral-2" aria-hidden="true"></div>
+
+  <!-- Ticker tape atas -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker">
+      <span>KMTF ISBI BANDUNG</span>
+      <span class="ticker-sep">✦</span>
+      <span>KELUARGA MAHASISWA TELEVISI &amp; FILM</span>
+      <span class="ticker-sep">✦</span>
+      <span>BERKARYA ·  BERCERITA · BERSAMA</span>
+      <span class="ticker-sep">✦</span>
+      <span>KMTF ISBI BANDUNG</span>
+      <span class="ticker-sep">✦</span>
+      <span>KELUARGA MAHASISWA TELEVISI &amp; FILM</span>
+      <span class="ticker-sep">✦</span>
+      <span>BERKARYA · BERCERITA · BERSAMA</span>
+      <span class="ticker-sep">✦</span>
+    </div>
+  </div>
+
+  <div class="hero-layout">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        ISBI Bandung — UKM Film &amp; Televisi
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line line-outline">KELUARGA</span>
+        <span class="title-line line-fill">MAHASISWA</span>
+        <span class="title-line line-accent">TELEVISI</span>
+        <span class="title-line line-fill">&amp; FILM</span>
+      </h1>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <div class="meta-num">10<span>+</span></div>
+          <div class="meta-label">Tahun Berdiri</div>
+        </div>
+        <div class="hero-meta-divider"></div>
+        <div class="hero-meta-item">
+          <div class="meta-num">50<span>+</span></div>
+          <div class="meta-label">Karya Produksi</div>
+        </div>
+        <div class="hero-meta-divider"></div>
+        <div class="hero-meta-item">
+          <div class="meta-num">200<span>+</span></div>
+          <div class="meta-label">Anggota Aktif</div>
+        </div>
+      </div>
+
+      <div class="hero-btns">
+        <a href="#karya" class="btn-primary">
+          <span class="btn-icon">▶</span> Lihat Karya
+        </a>
+        <a href="#about" class="btn-ghost">Tentang Kami →</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Film poster stack (brutalist tilt) -->
+      <div class="poster-stack">
+        <div class="poster-card poster-back">
+          <div class="poster-img" style="background-image:url(assets/images/poster-glen.png)"></div>
+          <div class="poster-label">Film Pendek</div>
+        </div>
+        <div class="poster-card poster-front">
+          <div class="poster-img" style="background-image:url(assets/images/poster-singgih.png)"></div>
+          <div class="poster-label">Film Pendek</div>
+        </div>
+        <!-- Geometric accent -->
+        <div class="poster-geo geo-circle" aria-hidden="true"></div>
+        <div class="poster-geo geo-cross" aria-hidden="true">✛</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom scroll signal -->
+  <div class="hero-scroll">
+    <span>SCROLL</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- ===================== MARQUEE BAR ===================== -->
+<div class="marquee-bar" aria-hidden="true">
+  <div class="marquee-track">
+    <span>FILM PENDEK</span><span class="dot">●</span>
+    <span>DOKUMENTER</span><span class="dot">●</span>
+    <span>EKSPERIMENTAL</span><span class="dot">●</span>
+    <span>SINEMATOGRAFI</span><span class="dot">●</span>
+    <span>POST PRODUCTION</span><span class="dot">●</span>
+    <span>SCREENWRITING</span><span class="dot">●</span>
+    <span>FILM PENDEK</span><span class="dot">●</span>
+    <span>DOKUMENTER</span><span class="dot">●</span>
+    <span>EKSPERIMENTAL</span><span class="dot">●</span>
+    <span>SINEMATOGRAFI</span><span class="dot">●</span>
+    <span>POST PRODUCTION</span><span class="dot">●</span>
+    <span>SCREENWRITING</span><span class="dot">●</span>
+  </div>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about">
+  <div class="about-wrapper">
+    <div class="section-tag">[ TENTANG KAMI ]</div>
+
+    <div class="about-grid">
+      <div class="about-text-col">
+        <h2 class="section-title-brut">
+          Berkarya<br/>
+          <em class="script-accent">Tanpa Batas</em>
+        </h2>
+        <p class="body-text">
+          KMTF adalah unit kegiatan mahasiswa di ISBI Bandung yang berfokus pada dunia
+          pertelevisian dan perfilman. Kami hadir sebagai wadah ekspresi, eksperimen,
+          dan kolaborasi kreatif bagi mahasiswa yang ingin mengembangkan kemampuan
+          di bidang media visual.
+        </p>
+        <p class="body-text">
+          Dari produksi film pendek, dokumenter, hingga siaran televisi kampus —
+          kami percaya setiap cerita layak untuk diceritakan.
+        </p>
+        <a href="#karya" class="btn-primary mt-32">Lihat Karya Kami</a>
+      </div>
+
+      <div class="about-box-col">
+        <!-- Big brutalist info card -->
+        <div class="about-card">
+          <div class="about-card-header">
+            <span class="card-tag">EST.</span>
+            <span class="card-year">2015</span>
+          </div>
+          <div class="about-card-body">
+            <p>Kami bukan sekadar komunitas — kami adalah keluarga yang tumbuh bersama dalam seni bercerita melalui gambar bergerak.</p>
+            <div class="contact-block">
+              <div class="contact-item">📍 ISBI Bandung · Jl. Buahbatu No.212</div>
+              <div class="contact-item">✉ <a href="mailto:kmtf@isbi.ac.id">kmtf@isbi.ac.id</a></div>
+            </div>
+          </div>
+          <!-- Halftone corner deco -->
+          <div class="card-halftone-deco" aria-hidden="true"></div>
+        </div>
+
+        <!-- Stats grid brutalist -->
+        <div class="stats-brut">
+          <div class="stat-brut">
+            <div class="stat-num">10<span>+</span></div>
+            <div class="stat-label">Tahun Berdiri</div>
+          </div>
+          <div class="stat-brut stat-lime">
+            <div class="stat-num">50<span>+</span></div>
+            <div class="stat-label">Karya Produksi</div>
+          </div>
+          <div class="stat-brut">
+            <div class="stat-num">200<span>+</span></div>
+            <div class="stat-label">Anggota Aktif</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DIVISI ===================== -->
+<section id="divisi">
+  <div class="section-tag lime">[ DIVISI KAMI ]</div>
+  <div class="divisi-header">
+    <h2 class="section-title-brut">Satu Visi,<br/>Banyak Keahlian</h2>
+    <p class="body-text max-400">Setiap divisi membawa keahlian unik yang saling melengkapi demi satu tujuan — menciptakan karya terbaik.</p>
+  </div>
+
+  <div class="divisi-grid">
+    <div class="divisi-card" data-index="01">
+      <div class="divisi-num">01</div>
+      <div class="divisi-icon-wrap">🎬</div>
+      <h3>Produksi Film</h3>
+      <p>Menggarap film pendek, dokumenter, dan proyek sinematik dengan pendekatan artistik dan naratif yang kuat.</p>
+      <div class="divisi-bar"></div>
+    </div>
+    <div class="divisi-card" data-index="02">
+      <div class="divisi-num">02</div>
+      <div class="divisi-icon-wrap">📺</div>
+      <h3>Televisi &amp; Penyiaran</h3>
+      <p>Merancang dan memproduksi konten siaran, program talkshow, berita, dan hiburan untuk media televisi kampus.</p>
+      <div class="divisi-bar"></div>
+    </div>
+    <div class="divisi-card" data-index="03">
+      <div class="divisi-num">03</div>
+      <div class="divisi-icon-wrap">✂️</div>
+      <h3>Editing &amp; Pasca Produksi</h3>
+      <p>Mengolah footage menjadi karya yang memukau melalui color grading, sound design, dan visual effects.</p>
+      <div class="divisi-bar"></div>
+    </div>
+    <div class="divisi-card" data-index="04">
+      <div class="divisi-num">04</div>
+      <div class="divisi-icon-wrap">📸</div>
+      <h3>Fotografi &amp; Dokumentasi</h3>
+      <p>Mengabadikan momen dan bercerita melalui komposisi visual yang tajam dan penuh makna.</p>
+      <div class="divisi-bar"></div>
+    </div>
+    <div class="divisi-card" data-index="05">
+      <div class="divisi-num">05</div>
+      <div class="divisi-icon-wrap">✍️</div>
+      <h3>Penulisan Skenario</h3>
+      <p>Menulis dan mengembangkan naskah yang menjadi fondasi dari setiap karya audio-visual yang bermakna.</p>
+      <div class="divisi-bar"></div>
+    </div>
+    <div class="divisi-card" data-index="06">
+      <div class="divisi-num">06</div>
+      <div class="divisi-icon-wrap">📣</div>
+      <h3>Hubungan &amp; Media</h3>
+      <p>Mengelola komunikasi, publikasi, dan kehadiran digital KMTF di berbagai platform media sosial.</p>
+      <div class="divisi-bar"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KARYA / PORTFOLIO ===================== -->
+<section id="karya">
+  <div class="karya-header">
+    <div class="section-tag">[ KARYA TERPILIH ]</div>
+    <h2 class="section-title-brut">Produksi<br/><em class="script-accent">Kami</em></h2>
+    <a href="#" class="btn-ghost-sm">Lihat Semua →</a>
+  </div>
+
+  <div class="portfolio-grid">
+    <!-- Featured film (large) -->
+    <div class="port-item port-featured" style="--bg-img:url(assets/images/poster-singgih.png)">
+      <div class="port-bg-img"></div>
+      <div class="port-halftone" aria-hidden="true"></div>
+      <div class="port-overlay">
+        <div class="port-meta">
+          <span class="port-cat">Film Pendek</span>
+          <span class="port-year">2024</span>
+        </div>
+        <div class="port-title-wrap">
+          <h3>When Ink Bled Into Her Paper, I Crossed Into The Life I Was Never Meant To Be</h3>
+        </div>
+        <div class="port-cta">
+          <div class="play-btn-brut" aria-label="Putar Film">▶</div>
+          <span>Tonton Sekarang</span>
+        </div>
+      </div>
+      <div class="port-number">01</div>
+    </div>
+
+    <!-- Film 2 -->
+    <div class="port-item" style="--bg-img:url(assets/images/poster-glen.png)">
+      <div class="port-bg-img"></div>
+      <div class="port-halftone" aria-hidden="true"></div>
+      <div class="port-overlay">
+        <div class="port-meta">
+          <span class="port-cat">Film Pendek</span>
+          <span class="port-year">2024</span>
+        </div>
+        <div class="port-title-wrap">
+          <h3>Berharap Dikenal Di Duniamu Yang Ramai</h3>
+        </div>
+        <div class="port-cta">
+          <div class="play-btn-brut" aria-label="Putar Film">▶</div>
+          <span>Tonton</span>
+        </div>
+      </div>
+      <div class="port-number">02</div>
+    </div>
+
+    <!-- Film 3 – placeholder card -->
+    <div class="port-item port-dark">
+      <div class="port-placeholder">
+        <div class="placeholder-geo">◈</div>
+      </div>
+      <div class="port-overlay">
+        <div class="port-meta">
+          <span class="port-cat">Film Pendek</span>
+          <span class="port-year">2023</span>
+        </div>
+        <div class="port-title-wrap">
+          <h3>Chronicles of You</h3>
+        </div>
+        <div class="port-cta">
+          <div class="play-btn-brut" aria-label="Putar Film">▶</div>
+          <span>Tonton</span>
+        </div>
+      </div>
+      <div class="port-number">03</div>
+    </div>
+
+    <!-- Film 4 – placeholder card -->
+    <div class="port-item port-lime">
+      <div class="port-placeholder lime-bg">
+        <div class="placeholder-geo dark">◈</div>
+      </div>
+      <div class="port-overlay port-overlay-dark">
+        <div class="port-meta">
+          <span class="port-cat port-cat-dark">Eksperimental</span>
+          <span class="port-year port-year-dark">2023</span>
+        </div>
+        <div class="port-title-wrap">
+          <h3 class="title-dark">Kemana Aku Harus Pulang</h3>
+        </div>
+        <div class="port-cta">
+          <div class="play-btn-brut dark-play" aria-label="Putar Film">▶</div>
+          <span class="cta-dark">Tonton</span>
+        </div>
+      </div>
+      <div class="port-number dark-num">04</div>
+    </div>
+
+    <!-- Film 5 – placeholder card -->
+    <div class="port-item port-red">
+      <div class="port-placeholder red-bg">
+        <div class="placeholder-geo">◈</div>
+      </div>
+      <div class="port-overlay">
+        <div class="port-meta">
+          <span class="port-cat">Eksperimental</span>
+          <span class="port-year">2023</span>
+        </div>
+        <div class="port-title-wrap">
+          <h3>Will You Find Me in My Draw</h3>
+        </div>
+        <div class="port-cta">
+          <div class="play-btn-brut" aria-label="Putar Film">▶</div>
+          <span>Tonton</span>
+        </div>
+      </div>
+      <div class="port-number">05</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KEGIATAN ===================== -->
+<section id="kegiatan">
+  <div class="section-tag lime">[ PROGRAM &amp; KEGIATAN ]</div>
+  <h2 class="section-title-brut">Apa Yang<br/>Kami Lakukan</h2>
+
+  <div class="kegiatan-list">
+    <div class="kegiatan-item reveal-item">
+      <div class="keg-left">
+        <div class="keg-num">01</div>
+        <div class="keg-freq">Tahun Genap</div>
+      </div>
+      <div class="keg-center">
+        <h3>Cinecussion Movie Exhibition</h3>
+        <p>Festival film dan ruang apresiasi yang diselenggarakan oleh KMTF ISBI Bandung. Acara ini menayangkan karya film, memperkuat budaya menonton, serta memfasilitasi kolaborasi dan diskusi antara pembuat film muda dengan profesional, khususnya dalam genre fiksi, dokumenter, dan eksperimental.</p>
+      </div>
+      <div class="keg-right">
+        <div class="keg-arrow">→</div>
+      </div>
+    </div>
+
+    <div class="kegiatan-item reveal-item">
+      <div class="keg-left">
+        <div class="keg-num">02</div>
+        <div class="keg-freq">Semester</div>
+      </div>
+      <div class="keg-center">
+        <h3>Open Recruitment</h3>
+        <p>Pelatihan teknis dan kreatif bersama praktisi industri: kameraman, sutradara, editor, dan produser dari dunia perfilm-an Indonesia.</p>
+      </div>
+      <div class="keg-right">
+        <div class="keg-arrow">→</div>
+      </div>
+    </div>
+
+    <div class="kegiatan-item keg-lime reveal-item">
+      <div class="keg-left">
+        <div class="keg-num">03</div>
+        <div class="keg-freq">Mingguan</div>
+      </div>
+      <div class="keg-center">
+        <h3>Cineweekly</h3>
+        <p>Pemutaran film — dari klasik hingga kontemporer — diikuti diskusi mendalam tentang bahasa sinema, narasi, dan dampak sosial karya film.</p>
+      </div>
+      <div class="keg-right">
+        <div class="keg-arrow">→</div>
+      </div>
+    </div>
+
+    <div class="kegiatan-item reveal-item">
+      <div class="keg-left">
+        <div class="keg-num">04</div>
+        <div class="keg-freq">Semester</div>
+      </div>
+      <div class="keg-center">
+        <h3>Kelas Sinematografi</h3>
+        <p>Belajar teknik pengambilan gambar, pencahayaan, komposisi, dan pergerakan kamera dari mentor berpengalaman di industri perfilman.</p>
+      </div>
+      <div class="keg-right">
+        <div class="keg-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section id="cta">
+  <div class="cta-inner">
+    <!-- Geometric shapes -->
+    <div class="cta-geo cta-geo-1" aria-hidden="true"></div>
+    <div class="cta-geo cta-geo-2" aria-hidden="true"></div>
+
+    <div class="cta-tag">[ BERGABUNG ]</div>
+    <h2 class="cta-title">
+      Siap Berkarya<br/>
+      <em class="script-accent">Bersama Kami?</em>
+    </h2>
+    <p class="cta-sub">Jadilah bagian dari keluarga mahasiswa yang berkarya,<br/>berinovasi, dan bercerita melalui layar.</p>
+    <div class="cta-btns">
+      <a href="mailto:kmtf@isbi.ac.id" class="btn-cta-lime">Hubungi Kami</a>
+      <a href="#about" class="btn-cta-ghost">Pelajari Lebih →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <!-- Top halftone strip -->
+  <div class="footer-halftone-strip" aria-hidden="true"></div>
+
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/images/logo-kmtf.png" alt="KMTF ISBI Bandung"/>
+        <p class="footer-tagline">
+          Keluarga Mahasiswa Televisi &amp; Film<br/>
+          Institut Seni Budaya Indonesia Bandung.<br/>
+          <em>Berkarya, Bercerita, Bersama.</em>
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#divisi">Divisi</a></li>
+            <li><a href="#karya">Karya</a></li>
+            <li><a href="#kegiatan">Kegiatan</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="mailto:kmtf@isbi.ac.id">Email</a></li>
+            <li><a href="https://isbi.ac.id" target="_blank" rel="noopener">ISBI Bandung</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 KMTF ISBI Bandung. Semua hak dilindungi.</p>
+      <div class="social-row">
+        <a class="soc" href="#" title="Instagram">IG</a>
+        <a class="soc" href="#" title="YouTube">YT</a>
+        <a class="soc" href="#" title="Twitter/X">TW</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
